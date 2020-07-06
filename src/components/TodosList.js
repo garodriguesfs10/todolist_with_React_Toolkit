@@ -26,7 +26,7 @@ export const TodosList = () => {
             <tr key={e.id}>
                 <td>{shorter}</td>
                 <td>{e.task} </td>
-                <td><button onClick={() => HandleEdit(e.id, e.task)}>Editar</button> <button onClick={() => HandleDelete(e.id)}>Delete</button></td>
+                <td><button onClick={() => HandleEdit(e.id, e.task)} className='btn btn-warning'>Editar</button> <button onClick={() => HandleDelete(e.id)} className="btn btn-danger">Delete</button></td>
             </tr>
         )
     }

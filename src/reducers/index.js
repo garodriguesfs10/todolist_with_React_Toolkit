@@ -5,11 +5,7 @@ export const DELETE_TODO = createAction('DELETE_TODO')
 export const EDIT_TODO = createAction('EDIT_TODO')
 export const SAVE_EDIT_TODO = createAction('SAVE_EDIT_TODO')
 export const CLEAR_EDIT = createAction('CLEAR_EDIT')
-const INITIAL_STATE =
-    [{
-        id: uuidv4(),
-        task: 'First One'
-    }];
+const INITIAL_STATE =  [];
 
 const CurrentTodo = { id: '', task: '' }
 
