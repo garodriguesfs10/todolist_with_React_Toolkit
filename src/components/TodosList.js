@@ -14,7 +14,7 @@ export const TodosList = () => {
 
     const HandleEdit = (id, task) => {
         console.log('Handle Edit' + id, task)
-        dispatch(EDIT_TODO({ id: id, task: task }))
+        dispatch(EDIT_TODO({ id,task}))
     }
 
     console.log('Todo: ' + JSON.stringify(todo))
