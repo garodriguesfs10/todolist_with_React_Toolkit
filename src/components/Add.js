@@ -51,12 +51,18 @@ export const Add = () => {
         setForm({ ...form, [e.target.name]: e.target.value })
     }
 
+    function getShorter(){
+        const idString = edit.id
+        const shorter = idString.substring(0, 5)
+        return shorter
+    }
+    
 
 
     return (
         <div>
             <hr />
-            <h3>Modo: {edit.id === '' ? 'Esperando Entrada' : 'Editando'}</h3>
+            <h3>Modo: {edit.id === '' ? 'Esperando Entrada' : `Editando ID: ${getShorter()}`}</h3>
             <input type='text' placeholder="Adicionar tarefa" name='task' id='task' className='form-control' onChange={HandleChange} value={form.task} required />
             <br />
             <button type="submit" onClick={HandleSubmit} className='btn btn-success'>Adicionar</button>
