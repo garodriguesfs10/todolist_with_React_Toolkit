@@ -47,7 +47,7 @@ export const CurrentTodoReducer = createReducer(CurrentTodo, {
     [CLEAR_EDIT.type]: (state,action) =>{
         state.id=''
         state.task=''
-        return state
+       // return state
     }
 })
 
