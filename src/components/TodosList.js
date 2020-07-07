@@ -38,9 +38,9 @@ export const TodosList = () => {
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Tarefas</th>
-                        <th scope="col">Opções</th>
+                        <th scope="col" class="w-5">ID</th>
+                        <th scope="col" class="w-75">Tarefas</th>
+                        <th scope="col" class="w-20">Opções</th>
                     </tr>
                 </thead>
                 <tbody>
