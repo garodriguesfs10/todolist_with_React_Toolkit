@@ -34,11 +34,11 @@ export const Add = () => {
 
             if (edit.id === "") {
                 console.log('Normal')
-                await dispatch(ADD_TODO(form))
+                dispatch(ADD_TODO(form))
                 setForm({ task: '' })
             } else {
                 console.log('Editando')
-                await dispatch(SAVE_EDIT_TODO({ task: form.task, id: edit.id }))
+                dispatch(SAVE_EDIT_TODO({ task: form.task, id: edit.id }))
                 dispatch(CLEAR_EDIT())
                 setForm({ task: '' })
             }

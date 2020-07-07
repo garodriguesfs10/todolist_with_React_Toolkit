@@ -37,6 +37,7 @@ export const todoReducer = createReducer(INITIAL_STATE, {
 
 export const CurrentTodoReducer = createReducer(CurrentTodo, {
     [EDIT_TODO.type]: (state, action) => {
+        console.log("Action payload from editTodo: "+JSON.stringify(action.payload))
         const { id, task } = action.payload
         state.id = id
         state.task = task

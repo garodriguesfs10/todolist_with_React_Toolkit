@@ -35,12 +35,12 @@ export const TodosList = () => {
 
     return (
         <div>
-            <table class="table">
-                <thead class="thead-dark">
+            <table className="table">
+                <thead className="thead-dark">
                     <tr>
-                        <th scope="col" class="w-5">ID</th>
-                        <th scope="col" class="w-75">Tarefas</th>
-                        <th scope="col" class="w-20">Opções</th>
+                        <th scope="col" className="w-5">ID</th>
+                        <th scope="col" className="w-75">Tarefas</th>
+                        <th scope="col" className="w-20">Opções</th>
                     </tr>
                 </thead>
                 <tbody>
